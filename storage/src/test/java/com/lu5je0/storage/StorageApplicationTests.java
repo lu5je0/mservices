@@ -14,6 +14,8 @@ class StorageApplicationTests {
     @Test
     void contextLoads() {
         System.out.println(storageDOMapper.selectByPrimaryKey(1));
+        storageDOMapper.reduce(1, 1);
+        System.out.println(storageDOMapper.selectByPrimaryKey(1));
     }
 
 }

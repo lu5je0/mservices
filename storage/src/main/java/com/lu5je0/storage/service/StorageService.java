@@ -6,4 +6,6 @@ package com.lu5je0.storage.service;
  */
 public interface StorageService {
     String func();
+
+    void reduceStorage(int count);
 }

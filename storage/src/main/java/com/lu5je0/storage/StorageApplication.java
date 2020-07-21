@@ -1,13 +1,13 @@
-package com.lu5je0.storage.demo;
+package com.lu5je0.storage;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DemoApplication {
+public class StorageApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DemoApplication.class, args);
+        SpringApplication.run(StorageApplication.class, args);
     }
 
 }

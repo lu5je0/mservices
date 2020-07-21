@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.example</groupId>
+        <groupId>org.lu5je0</groupId>
         <artifactId>mservices</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>

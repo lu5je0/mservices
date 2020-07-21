@@ -15,3 +15,6 @@ dubbo:
     address: zookeeper://localhost:2181
   scan:
     base-packages: com.lu5je0
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml

@@ -1,0 +1,13 @@
+server:
+  port: 13321
+spring:
+  application:
+    name: storage
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/testdb?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password:
+  dubbo:
+    server: ture
+    registry: zookeeper://localhost:2181

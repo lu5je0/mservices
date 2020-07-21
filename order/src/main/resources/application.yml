@@ -13,3 +13,6 @@ spring:
 dubbo:
   registry:
     address: zookeeper://localhost:2181
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml

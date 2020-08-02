@@ -6,9 +6,13 @@ spring:
     name: storage
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/testdb?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    url: jdbc:mysql://localhost:3306/testdb?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai&AllowPublicKeyRetrieval=True
     username: root
-    password:
+    password: root
+  cloud:
+    alibaba:
+      seata:
+        tx-service-group: demo-group
 
 dubbo:
   registry:
@@ -18,3 +22,12 @@ dubbo:
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml
+
+seata:
+  service:
+    vgroup-mapping:
+      demo-group: default
+  registry:
+    type: zk
+    zk:
+      server-addr: localhost:2181

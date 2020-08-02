@@ -10,9 +10,9 @@
     </parent>
 
     <groupId>com.lu5je0.storage</groupId>
-    <artifactId>demo</artifactId>
+    <artifactId>storage</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>demo</name>
+    <name>storage</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>

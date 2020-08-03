@@ -27,8 +27,9 @@ class OrderApplicationTests {
     }
 
     @Test
-    void createOrder() {
+    void createOrder() throws InterruptedException {
         orderService.createOrder("ghfdanfa");
+        Thread.sleep(10000);
     }
 
 }

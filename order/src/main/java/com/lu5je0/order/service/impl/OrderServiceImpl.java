@@ -29,7 +29,7 @@ public class OrderServiceImpl implements OrderService {
         OrderDO record = new OrderDO();
         record.setComment(comment);
 
-        storageService.reduceStorage(1);
+        storageService.reduceStorage(null, 1);
         orderDOMapper.insert(record);
         throw new RuntimeException("fdafa");
     }
